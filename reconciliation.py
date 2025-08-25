@@ -132,8 +132,3 @@ if st.button("Generate Excel Output"):
             st.error("❌ ACH Amount must be numeric.")
         except Exception as e:
             st.error(f"❌ Unexpected error: {e}")
-
-st.markdown("---")  # horizontal divider
-if st.button("❌ Exit Program"):
-    st.warning("Shutting down the Streamlit app...")
-    os._exit(0)
