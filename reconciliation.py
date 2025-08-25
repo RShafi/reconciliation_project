@@ -68,14 +68,13 @@ if st.button("Generate Excel Output"):
 
                     # Rearrange output columns
                     df_final = matching_df[[
-                        'First Name', 'Last Name', 'Candidate CAI ID', 'Vector Week Ending', 'FMS Week Ending',
-                        'Quantity', 'Unit Cost', 'Extended Amount', 'Invoice Amount', 'Due Date',
-                        'CAI Invoice Number', "Supplier's Invoice Number",
+                        'First Name', 'Last Name', 'Vector Week Ending', 'FMS Week Ending',
+                        'Quantity', 'Unit Cost', 'Invoice Amount',
+                        "Supplier's Invoice Number",
                         'ACH Description', 'ACH Amount', 'ACH Date'
                     ]].rename(columns={
                         'Quantity': 'Hours',
                         'Unit Cost': 'Bill Rate',
-                        "Supplier's Invoice Number": 'ESG Invoice Number'
                     })
 
                     # Sort by Vector Week Ending
